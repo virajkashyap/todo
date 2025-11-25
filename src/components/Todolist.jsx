@@ -1,30 +1,11 @@
-const TodoList = () => {
+const TodoList = ({ item }) => {
   return (
     <div className="todo-list">
-      <table>
-        <thead>
-          <tr>
-            <th>Todos</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Sample Task</td>
-            <td>
-              <button>Done</button>
-              <button>Delete</button>
-            </td>
-          </tr>
-          <tr>
-            <td>Sample Task 2</td>
-            <td>
-              <button>Done</button>
-              <button>Delete</button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <h3>{item ? item : "no todo added yet"}</h3>
+      <div>
+        <button className="btn btn-warning">Edit</button>
+        <button className="btn btn-danger"> Delete</button>
+      </div>
     </div>
   );
 };

@@ -1,23 +1,59 @@
 #root {
-  /* max-width: 1280px; */
-  /* margin: 0 auto; */
-  /* padding: 2rem; */
+  max-width: 1280px;
+  margin: 5px;
+  padding: 2rem;
+  color: white;
   text-align: center;
-  background-color: aquamarine;
+  background-color: rgb(87, 107, 100);
 }
-
+/* .form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
 .form-todo {
-  background-color: rgb(7, 241, 163);
+  /* background-color: rgb(14, 209, 141); */
+  align-items: center;
   height: 80%;
   gap: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
 }
-
+.form-todo input {
+  width: 30%;
+  height: 35px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 10px;
+  /* display: flex; */
+  /* justify-content: space-between; */
+}
+.form-todo button {
+  width: 20%;
+  height: 35px;
+  border-radius: 8px;
+}
 .todo-list {
   text-align: center;
   display: flex;
   margin-top: 20px;
-  flex-direction: column;
-  /* align-items: center; */
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* background: #e71a1a; */
+  padding: 10px 50px;
+  border: 1px solid rgb(181, 199, 214);
+  margin: 10px;
+  border-radius: 10px;
+}
+.todo-list button {
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 10px;
 }
 /*
 .logo {

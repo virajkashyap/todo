@@ -8,14 +8,12 @@ import FormTodo from "./components/TodoForm";
 import TodoList from "./components/Todolist";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <Header />
       <hr />
       <FormTodo />
-      <TodoList />
+      {/* <TodoList /> */}
       <Fotter />
     </>
   );
